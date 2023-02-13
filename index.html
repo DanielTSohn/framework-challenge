@@ -5,10 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Title</title>
-    <link rel="stylesheet" href="screen.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   </head>
-  <body>
-    <h1>Heading</h1>
-    <script src="index.js"></script>
+  <body class="text-bg-primary">
+    <div class="container text-center">
+      <h1>We'd like to hear from you!</h1>
+      <form class="card text-center text-white mb-3">
+        <img src="bread_rack.jpg" class="card-img" alt="bread on a vertical rack">
+        <div class="card-img-overlay">
+          <h2 class="card-title">Feedback for Boston Bakery</h2>
+          <div class="container overflow-hidden text-center">
+            <div class="row g-2">
+              <div class="col-lg-auto">
+                Leave your contact information if you want us to followup!
+                <label class="input-group input-group-sm">
+                  <input type="email" name="email" class="form-control" multiple placeholder="email_adress@email.com">
+                </label>
+                Phone Number
+                <label class="input-group input-group-sm">
+                  <input type="number" name="Country Code" class="form-control" multiple placeholder="1" minlength="1" maxlength="4" min="0" max="1624">
+                  </div>
+                  <input type="tel" name="Phone number" class="form-control" multiple placeholder="123-456-0000" minlength="10" maxlength="14" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                </label>
+              </div>
+              <div class="col-lg-auto">
+                <label class="form-label">
+                  Date of event (optional)
+                  <input type="date" class="form-control">
+                </label>
+                <div class="form-floating text-black">
+                  <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                    <option value="product">product</option>
+                    <option value="business">business</option>
+                    <option value="storefront">storefront</option>
+                    <option value="other">other</option>
+                  </select>
+                  <label for="floatingSelect">Reason for Feedback:</label>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-floating text-black">
+                <textarea class="form-control" placeholder="Leave feedback here!" id="floatingTextarea2"></textarea>
+                <label for="floatingTextarea2">Comments</label>
+              </div>
+    
+              <label>
+                <p><button class="btn btn-primary" type="button">Submit</button></p>
+              </label>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
   </body>
 </html>
